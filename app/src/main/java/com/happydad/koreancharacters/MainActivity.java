@@ -2,6 +2,7 @@ package com.happydad.koreancharacters;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,8 +10,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -31,6 +34,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         final ActionBar actionBar=getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         addTabs(actionBar);
+
+
+        //setup with button
+        // buttonSounds();
 
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -58,6 +65,18 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         });
 
     }
+
+    private void buttonSounds() {
+        final MediaPlayer sound = MediaPlayer.create(this, R.raw.ga);
+        sound.start();
+        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer sound) {
+                sound.release();
+            }
+        });
+
+    }
+
     private void addTabs(ActionBar actionBar)
     {
         ActionBar.Tab tab1=actionBar.newTab();

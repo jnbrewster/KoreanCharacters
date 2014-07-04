@@ -1,175 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnCount="2"
-    android:rowCount="5"
-
-    >
-
-    <ScrollView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" />
+        android:id="@+id/LinearLayout1"
+        android:layout_weight="1">
 
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <Button
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="거"
-            android:id="@+id/button거"
-            android:textSize="54dp"
-            android:textStyle="bold"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+        <!-- Equal weights cause two columns of equal width. -->
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="가"
-            android:id="@+id/button가"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="0"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_column="1" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+            android:textSize="40dp"
+            android:id="@+id/Button가" />
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="교"
-            android:id="@+id/button교"
-            android:textSize="54dp"
-            android:textStyle="bold"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
-
-        <Button
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="구"
-            android:id="@+id/button구"
-            android:textSize="54dp"
-            android:textStyle="bold"
-            android:layout_row="3"
-            android:layout_column="0"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <Button
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="갸"
-            android:id="@+id/button갸"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+            android:textSize="40dp"
+            android:id="@+id/Button갸" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout2"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="규"
-            android:id="@+id/button규"
-            android:textSize="54dp"
+            android:layout_weight="1"
+            android:text="거"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="3"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+            android:textSize="40dp"
+            android:id="@+id/Button거" />
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="겨"
-            android:id="@+id/button겨"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="1"
-            android:layout_column="1"
+            android:textSize="40dp"
+            android:id="@+id/Button겨" />
+    </LinearLayout>
 
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout3"
+        android:layout_weight="1">
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="고"
-            android:id="@+id/button고"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+            android:textSize="40dp"
+            android:id="@+id/Button고" />
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="교"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button교" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout4"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="구"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button구" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="규"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button규" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout5"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="그"
-            android:id="@+id/button그"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="4"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
+            android:textSize="40dp"
+            android:id="@+id/Button그" />
 
         <Button
-
-            android:layout_width="fill_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="기"
-            android:id="@+id/button기"
-            android:textSize="54dp"
+            android:padding="20dp"
             android:textStyle="bold"
-            android:layout_row="4"
-            android:layout_column="1"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp" />
-
-    </TableRow>
+            android:textSize="40dp"
+            android:id="@+id/Button기" />
+    </LinearLayout>
 
 
-</TableLayout>
+</LinearLayout>
