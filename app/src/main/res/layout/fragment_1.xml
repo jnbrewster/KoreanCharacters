@@ -1,142 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@android:color/holo_blue_dark"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:gravity="fill_horizontal|fill|fill_vertical">
+    android:layout_height="fill_parent"
+    android:columnCount="2"
+    android:rowCount="5"
 
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:gravity="left">
+    >
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="144dp"
-                android:layout_height="wrap_content"
-                android:text="가"
-                android:id="@+id/button가"
-                android:textSize="54dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="거"
-                android:id="@+id/button거"
-                android:textSize="54dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_row="3"
-                android:layout_column="1" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="고"
-                android:id="@+id/button고"
-                android:textSize="54dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_row="1" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="구"
-                android:id="@+id/button구"
-                android:textSize="54dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_row="2"
-                android:layout_column="0" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="그"
-                android:id="@+id/button그"
-                android:textSize="54dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_row="0"
-                android:layout_column="1" />
-
-        </TableLayout>
-
-    <TableLayout
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:gravity="right">
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="갸"
-            android:id="@+id/button갸"
+            android:text="거"
+            android:id="@+id/button거"
             android:textSize="54dp"
             android:textStyle="bold"
-            android:padding="10dp"
             android:layout_row="1"
-            android:layout_column="0" />
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="겨"
-            android:id="@+id/button겨"
+            android:text="가"
+            android:id="@+id/button가"
             android:textSize="54dp"
             android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_row="0" />
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="교"
             android:id="@+id/button교"
             android:textSize="54dp"
             android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_row="3"
-            android:layout_column="0" />
+            android:layout_row="2"
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="구"
+            android:id="@+id/button구"
+            android:textSize="54dp"
+            android:textStyle="bold"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="갸"
+            android:id="@+id/button갸"
+            android:textSize="54dp"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <Button
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="규"
             android:id="@+id/button규"
             android:textSize="54dp"
             android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_row="2"
-            android:layout_column="1" />
+            android:layout_row="3"
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="겨"
+            android:id="@+id/button겨"
+            android:textSize="54dp"
+            android:textStyle="bold"
+            android:layout_row="1"
+            android:layout_column="1"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="고"
+            android:id="@+id/button고"
+            android:textSize="54dp"
+            android:textStyle="bold"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="그"
+            android:id="@+id/button그"
+            android:textSize="54dp"
+            android:textStyle="bold"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <Button
+
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="기"
             android:id="@+id/button기"
             android:textSize="54dp"
             android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_row="1"
-            android:layout_column="3" />
+            android:layout_row="4"
+            android:layout_column="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
 
-    </TableLayout>
-</TableRow>
+    </TableRow>
+
+
+</TableLayout>

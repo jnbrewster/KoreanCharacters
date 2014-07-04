@@ -9,6 +9,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -16,13 +18,20 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Turn the phone on for testing
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON |
+                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
+                WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
+
         setContentView(R.layout.activity_main);
         viewPager= (ViewPager) findViewById(R.id.pager);
-
 
         final ActionBar actionBar=getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         addTabs(actionBar);
+
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -33,7 +42,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             @Override
             public void onPageSelected(int i) {
                 actionBar.setSelectedNavigationItem(i);
-                Log.d("VIVZ","onPageSelected "+i);
+
             }
 
             @Override
@@ -44,6 +53,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     Log.d("VIVZ","onPageScrollStateChanged scroll state dragging "+i);
                 if(i==ViewPager.SCROLL_STATE_SETTLING)
                     Log.d("VIVZ","onPageScrollStateChanged scroll state settling "+i);
+
             }
         });
 
