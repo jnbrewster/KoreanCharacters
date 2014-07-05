@@ -20,7 +20,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Buttonga" />
+            android:id="@+id/Button_ga" />
 
         <Button
             android:layout_width="0dp"
@@ -30,7 +30,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Buttongya" />
+            android:id="@+id/Button_gya" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Buttongo" />
+            android:id="@+id/Button_geo" />
 
         <Button
             android:layout_width="0dp"
@@ -59,7 +59,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Buttongyo" />
+            android:id="@+id/Button_gyeo" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,7 +76,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button고" />
+            android:id="@+id/Button_goh" />
 
         <Button
             android:layout_width="0dp"
@@ -86,7 +86,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button교" />
+            android:id="@+id/Button_gyoh" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,7 +103,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button구" />
+            android:id="@+id/Button_goo" />
 
         <Button
             android:layout_width="0dp"
@@ -113,7 +113,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button규" />
+            android:id="@+id/Button_gyoo" />
     </LinearLayout>
 
     <LinearLayout
@@ -130,7 +130,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button그" />
+            android:id="@+id/Button_geu" />
 
         <Button
             android:layout_width="0dp"
@@ -140,7 +140,7 @@
             android:padding="20dp"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button기" />
+            android:id="@+id/Button_gee" />
     </LinearLayout>
 
 
