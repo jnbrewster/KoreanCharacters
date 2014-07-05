@@ -2,7 +2,6 @@ package com.happydad.koreancharacters;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -11,16 +10,20 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
+
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
     ViewPager viewPager=null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         //Turn the phone on for testing
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON |
@@ -35,46 +38,21 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         addTabs(actionBar);
 
-
-        //setup with button
-        // buttonSounds();
-
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i2) {
-                Log.d("VIVZ","onPageScrolled "+i+" "+v+" "+i2);
             }
 
             @Override
             public void onPageSelected(int i) {
                 actionBar.setSelectedNavigationItem(i);
-
             }
 
             @Override
             public void onPageScrollStateChanged(int i) {
-                if(i==ViewPager.SCROLL_STATE_IDLE)
-                    Log.d("VIVZ","onPageScrollStateChanged scroll state idle "+i);
-                if(i==ViewPager.SCROLL_STATE_DRAGGING)
-                    Log.d("VIVZ","onPageScrollStateChanged scroll state dragging "+i);
-                if(i==ViewPager.SCROLL_STATE_SETTLING)
-                    Log.d("VIVZ","onPageScrollStateChanged scroll state settling "+i);
-
             }
         });
-
-    }
-
-    private void buttonSounds() {
-        final MediaPlayer sound = MediaPlayer.create(this, R.raw.ga);
-        sound.start();
-        sound.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            public void onCompletion(MediaPlayer sound) {
-                sound.release();
-            }
-        });
-
     }
 
     private void addTabs(ActionBar actionBar)
@@ -149,17 +127,14 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
         viewPager.setCurrentItem(tab.getPosition());
-//        Log.d("VIVZ","onTabSelected "+tab.getText());
     }
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
-//        Log.d("VIVZ","onTabUnselected "+tab.getText());
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
-//        Log.d("VIVZ","onTabReselected "+tab.getText());
     }
 }
 
