@@ -9,9 +9,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TabHost;
+import android.widget.TabWidget;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -19,10 +23,14 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
     ViewPager viewPager=null;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        //Hides the actionbar but keeps the tabs
+        getActionBar().setDisplayShowHomeEnabled(false);
+        getActionBar().setDisplayShowTitleEnabled(false);
 
 
         //Turn the phone on for testing
@@ -31,6 +39,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
                 WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
 
+
+
         setContentView(R.layout.activity_main);
         viewPager= (ViewPager) findViewById(R.id.pager);
 
@@ -38,8 +48,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         addTabs(actionBar);
 
+
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
             @Override
             public void onPageScrolled(int i, float v, int i2) {
             }
@@ -52,11 +64,16 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             @Override
             public void onPageScrollStateChanged(int i) {
             }
+
+
         });
     }
 
     private void addTabs(ActionBar actionBar)
     {
+        //Name the tabs
+        //TODO: condense
+
         ActionBar.Tab tab1=actionBar.newTab();
         tab1.setText(" ㄱ ");
         tab1.setTabListener(this);
@@ -109,6 +126,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         tab13.setText(" ㅎ ");
         tab13.setTabListener(this);
 
+
+        //Add the tabs
+        //TODO: condense
         actionBar.addTab(tab1);
         actionBar.addTab(tab2);
         actionBar.addTab(tab3);
