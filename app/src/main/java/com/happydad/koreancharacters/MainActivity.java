@@ -2,14 +2,18 @@ package com.happydad.koreancharacters;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.MenuInflater;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -28,9 +32,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         super.onCreate(savedInstanceState);
 
 
-        //Hides the actionbar but keeps the tabs
-        getActionBar().setDisplayShowHomeEnabled(false);
-        getActionBar().setDisplayShowTitleEnabled(false);
+        //Show the actionmenu bar
+        //TODO: add options and help page icons
+        getActionBar().setDisplayShowHomeEnabled(true);
+        getActionBar().setDisplayShowTitleEnabled(true);
 
 
         //Turn the phone on for testing
@@ -42,6 +47,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 
         setContentView(R.layout.activity_main);
+
         viewPager= (ViewPager) findViewById(R.id.pager);
 
         final ActionBar actionBar=getActionBar();
@@ -51,6 +57,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
 
             @Override
             public void onPageScrolled(int i, float v, int i2) {
@@ -67,7 +74,68 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 
         });
+
     }
+
+    public boolean onCreateOptionMenu(Menu menu)
+    {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.activity_main,menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_help:
+
+                openHelp();
+                return true;
+
+            case R.id.action_search:
+                openSearch();
+                return true;
+
+            case R.id.action_settings:
+                openSettings();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+    private void openSearch() {
+        Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT)
+                .show();
+    }
+
+    private void openAbout() {
+        Toast.makeText(this, "About me selected", Toast.LENGTH_SHORT)
+                .show();
+    }
+
+    private void openSettings() {
+        Toast.makeText(this, "Settings selected", Toast.LENGTH_SHORT)
+                .show();
+    }
+
+
+    private void openHelp() {
+        //Intent i = new Intent(MainActivity.this, OpenHelp.class);
+
+
+        Intent intent = new Intent();
+        intent.setClassName("com.happydad.koreancharacters", "com.happydad.koreancharacters.OpenHelp");
+        startActivity(intent);
+        //TODO: Fix the class linkage
+    }
+
+
+
 
     private void addTabs(ActionBar actionBar)
     {

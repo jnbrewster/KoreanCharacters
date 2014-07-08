@@ -1,20 +1,26 @@
 package com.happydad.koreancharacters;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.view.Menu;
 import android.widget.Toast;
+
 
 public class Fragment1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        setHasOptionsMenu(true);
 
         if (container == null) {
             return null;
@@ -25,7 +31,6 @@ public class Fragment1 extends Fragment {
 
 
         //Fragment section for button / audio
-
         Button button_ga = (Button) mLinearLayout.findViewById(R.id.Button_ga);
         button_ga.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,4 +206,16 @@ public class Fragment1 extends Fragment {
         return mLinearLayout;
 
     }
+
+    //Add options menu
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        MenuInflater mInflater = new MenuInflater(getActivity().getApplicationContext());
+        mInflater.inflate(R.menu.activity_main, menu);
+
+
+    }
+
+
+
 }
