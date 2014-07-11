@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.happydad.koreancharacters" >
-    <!-- Location found activity -->
+    <!-- OpenHelpPage activity -->
 
     <activity
-        android:name="com.happydad.koreancharacters.OpenHelp"
+        android:name=".OpenHelpPage"
         android:label="@string/action_help"
-        android:parentActivityName="com.happydad.koreancharacters.MainActivity" >
+        android:parentActivityName=".MainActivity" >
     </activity>
 
     <application

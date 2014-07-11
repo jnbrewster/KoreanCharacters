@@ -29,8 +29,9 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_whitetabs</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_whitetabs</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Whitetabs</item>
-        
-        
+
+
+
     </style>
 
     <style name="ActionBar.Solid.Whitetabs" parent="@android:style/Widget.Holo.ActionBar.Solid">
@@ -38,6 +39,7 @@
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_whitetabs</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_whitetabs</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Whitetabs</item>
+
     </style>
 
     <style name="ActionBar.Transparent.Whitetabs" parent="@android:style/Widget.Holo.ActionBar">
@@ -46,7 +48,7 @@
     </style>
 
     <style name="PopupMenu.Whitetabs" parent="@android:style/Widget.Holo.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_whitetabs</item>	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_whitetabs</item>
     </style>
 
     <style name="DropDownListView.Whitetabs" parent="@android:style/Widget.Holo.ListView.DropDown">
@@ -55,6 +57,10 @@
 
     <style name="ActionBarTabStyle.Whitetabs" parent="@android:style/Widget.Holo.ActionBar.TabView">
         <item name="android:background">@drawable/tab_indicator_ab_whitetabs</item>
+
+
+
+
     </style>
 
     <style name="DropDownNav.Whitetabs" parent="@android:style/Widget.Holo.Spinner">
@@ -68,13 +74,14 @@
     </style>
     
     <style name="ActionButton.CloseMode.Whitetabs" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
-        <item name="android:background">@drawable/btn_cab_done_whitetabs</item>
+
     </style>
 
     <!-- this style is only referenced in a Light.DarkActionBar based theme -->
     <style name="Theme.Whitetabs.Widget" parent="@android:style/Theme.Holo">
         <item name="android:popupMenuStyle">@style/PopupMenu.Whitetabs</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Whitetabs</item>
+
     </style>
 
 </resources>

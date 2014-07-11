@@ -1,7 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#e5345d">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout1"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="바"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_ba"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뱌"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_bya"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout2"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="버"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_beo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="벼"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_byeo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout3"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="보"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_boh" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뵤"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_byoh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout4"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="부"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_boo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뷰"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_byoo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout5"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="브"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_beu" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="비"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_bee" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#34b5e5"
-    >
+    android:background="#34b5e5">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,10 +20,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="가"
-            android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_ga"
-            android:paddingTop="10dp" />
+            android:paddingTop="10dp"
+            android:textStyle="bold" />
 
         <Button
             android:textColor="#FFFFFF"
@@ -34,7 +34,7 @@
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_gya"
-            android:paddingTop="10dp" />
+            android:paddingTop="10dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -53,7 +53,7 @@
             android:text="거"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_geo" />
+            android:id="@+id/Button_geo"/>
 
         <Button
             android:textColor="#FFFFFF"
@@ -63,7 +63,7 @@
             android:text="겨"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gyeo" />
+            android:id="@+id/Button_gyeo"/>
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +78,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="고"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_goh" />
@@ -89,7 +88,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="교"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_gyoh" />
@@ -107,7 +105,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="구"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_goo" />
@@ -118,7 +115,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="규"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_gyoo" />
@@ -136,7 +132,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="그"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_geu" />
@@ -147,7 +142,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="기"
-
             android:textStyle="bold"
             android:textSize="40dp"
             android:id="@+id/Button_gee" />

@@ -1,7 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#5de534">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout1"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="카"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_ka"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="캬"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_kya"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout2"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="커"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_keo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="켜"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_kyeo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout3"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="코"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_koh" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="쿄"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_kyoh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout4"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="쿠"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_joo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="큐"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_kyoo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout5"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="크"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_keu" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="키"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_kee" />
+    </LinearLayout>
+
+</LinearLayout>
+

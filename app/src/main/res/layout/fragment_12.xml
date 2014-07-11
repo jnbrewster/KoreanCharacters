@@ -1,7 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#6ac9ec">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout1"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="파"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pa"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="퍄"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pya"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout2"
+        android:layout_weight="1">
+
+        <!-- Equal weights cause two columns of equal width. -->
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="퍼"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_peo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="펴"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pyeo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout3"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="포"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_poh" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="표"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pyoh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout4"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="푸"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_poo" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="퓨"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pyoo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout5"
+        android:layout_weight="1">
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="프"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_peu" />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="피"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:id="@+id/Button_pee" />
+    </LinearLayout>
+
+</LinearLayout>
+

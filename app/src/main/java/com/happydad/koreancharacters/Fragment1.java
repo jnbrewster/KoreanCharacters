@@ -20,7 +20,7 @@ public class Fragment1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        setHasOptionsMenu(true);
+
 
         if (container == null) {
             return null;
@@ -211,7 +211,7 @@ public class Fragment1 extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         MenuInflater mInflater = new MenuInflater(getActivity().getApplicationContext());
-        mInflater.inflate(R.menu.activity_main, menu);
+        mInflater.inflate(R.menu.main, menu);
 
 
     }

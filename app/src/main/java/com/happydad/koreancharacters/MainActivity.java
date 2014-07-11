@@ -34,8 +34,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         //Show the actionmenu bar
         //TODO: add options and help page icons
-        getActionBar().setDisplayShowHomeEnabled(true);
-        getActionBar().setDisplayShowTitleEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(false);
+        getActionBar().setDisplayShowTitleEnabled(false);
 
 
         //Turn the phone on for testing
@@ -75,13 +75,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         });
 
-    }
-
-    public boolean onCreateOptionMenu(Menu menu)
-    {
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.activity_main,menu);
-        return true;
     }
 
 
@@ -125,13 +118,22 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 
     private void openHelp() {
-        //Intent i = new Intent(MainActivity.this, OpenHelp.class);
 
-
+        //New
         Intent intent = new Intent();
-        intent.setClassName("com.happydad.koreancharacters", "com.happydad.koreancharacters.OpenHelp");
+        intent.setClassName("com.happydad.koreancharacters", "com.happydad.koreancharacters.OpenHelpPage");
         startActivity(intent);
-        //TODO: Fix the class linkage
+
+        //old
+        //Intent intent = new Intent(MainActivity.this, OpenHelpPage.class);
+
+        //new variant
+        //Intent intent = new Intent(getApplicationContext(),OpenHelpPage.class);
+        //startActivity(intent);
+
+
+
+
     }
 
 
@@ -143,8 +145,15 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         //TODO: condense
 
         ActionBar.Tab tab1=actionBar.newTab();
-        tab1.setText(" ㄱ ");
+        tab1.setIcon(R.drawable.ic_action_help);
         tab1.setTabListener(this);
+
+
+        //old
+        //ActionBar.Tab tab1=actionBar.newTab();
+        //tab1.setText(" ㄱ ");
+        //tab1.setTabListener(this);
+
 
         ActionBar.Tab tab2=actionBar.newTab();
         tab2.setText(" ㄴ ");
