@@ -142,66 +142,66 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     private void addTabs(ActionBar actionBar)
     {
         //Name the tabs
-        //TODO: condense
+        //TODO: condense the tabs
+
+
+        //TODO: Fix the blurry images
 
         ActionBar.Tab tab1=actionBar.newTab();
-        tab1.setIcon(R.drawable.ic_action_help);
+        tab1.setIcon(R.drawable.tab1);
         tab1.setTabListener(this);
 
-
-        //old
-        //ActionBar.Tab tab1=actionBar.newTab();
-        //tab1.setText(" ㄱ ");
-        //tab1.setTabListener(this);
-
-
         ActionBar.Tab tab2=actionBar.newTab();
-        tab2.setText(" ㄴ ");
+        tab2.setIcon(R.drawable.tab2);
         tab2.setTabListener(this);
 
         ActionBar.Tab tab3=actionBar.newTab();
-        tab3.setText(" ㄷ ");
+        tab3.setIcon(R.drawable.tab3);
         tab3.setTabListener(this);
 
         ActionBar.Tab tab4=actionBar.newTab();
-        tab4.setText(" ㄹ ");
+        tab4.setIcon(R.drawable.tab4);
         tab4.setTabListener(this);
 
         ActionBar.Tab tab5=actionBar.newTab();
-        tab5.setText(" ㅁ ");
+        tab5.setIcon(R.drawable.tab5);
         tab5.setTabListener(this);
 
         ActionBar.Tab tab6=actionBar.newTab();
-        tab6.setText(" ㅂ ");
+        tab6.setIcon(R.drawable.tab6);
         tab6.setTabListener(this);
 
         ActionBar.Tab tab7=actionBar.newTab();
-        tab7.setText(" ㅅ ");
+        tab7.setIcon(R.drawable.tab7);
         tab7.setTabListener(this);
 
         ActionBar.Tab tab8=actionBar.newTab();
-        tab8.setText(" ㅈ ");
+        tab8.setIcon(R.drawable.tab8);
         tab8.setTabListener(this);
 
         ActionBar.Tab tab9=actionBar.newTab();
-        tab9.setText(" ㅊ ");
+        tab9.setIcon(R.drawable.tab9);
         tab9.setTabListener(this);
 
         ActionBar.Tab tab10=actionBar.newTab();
-        tab10.setText(" ㅋ ");
+        tab10.setIcon(R.drawable.tab10);
         tab10.setTabListener(this);
 
         ActionBar.Tab tab11=actionBar.newTab();
-        tab11.setText(" ㅌ ");
+        tab11.setIcon(R.drawable.tab11);
         tab11.setTabListener(this);
 
         ActionBar.Tab tab12=actionBar.newTab();
-        tab12.setText(" ㅍ ");
+        tab12.setIcon(R.drawable.tab12);
         tab12.setTabListener(this);
 
         ActionBar.Tab tab13=actionBar.newTab();
-        tab13.setText(" ㅎ ");
+        tab13.setIcon(R.drawable.tab13);
         tab13.setTabListener(this);
+
+        ActionBar.Tab tab14=actionBar.newTab();
+        tab14.setIcon(R.drawable.tab14);
+        tab14.setTabListener(this);
 
 
         //Add the tabs
@@ -219,6 +219,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         actionBar.addTab(tab11);
         actionBar.addTab(tab12);
         actionBar.addTab(tab13);
+        actionBar.addTab(tab14);
     }
 
     @Override
@@ -297,11 +298,15 @@ class MyAdapter extends FragmentStatePagerAdapter
         {
             fragment=new Fragment13();
         }
+        if(i==13)
+        {
+            fragment=new Fragment14();
+        }
         return fragment;
     }
 
     @Override
     public int getCount() {
-        return 13;
+        return 14;
     }
 }

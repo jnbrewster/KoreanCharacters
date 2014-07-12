@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#34b5e5">
-
+    android:background="#ffecfdff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,23 +19,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="가"
-            android:textSize="40dp"
-            android:id="@+id/Button_ga"
-            android:paddingTop="10dp"
+            android:text="아"
             android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textSize="40dp"
+            android:id="@+id/Button_a"
+            android:paddingTop="10dp" />
 
         <Button
             android:textColor="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="갸"
+            android:text="야"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gya"
-            android:paddingTop="10dp"/>
+            android:id="@+id/Button_ya"
+            android:paddingTop="10dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,20 +50,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="거"
+            android:text="어"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_geo"/>
+            android:id="@+id/Button_eo" />
 
         <Button
             android:textColor="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="겨"
+            android:text="여"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gyeo"/>
+            android:id="@+id/Button_yeo" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,20 +77,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="고"
+            android:text="오"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_goh" />
+            android:id="@+id/Button_oh" />
 
         <Button
             android:textColor="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="교"
+            android:text="요"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gyoh" />
+            android:id="@+id/Button_yoh" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,20 +104,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="구"
+            android:text="우"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_goo" />
+            android:id="@+id/Button_oo" />
 
         <Button
             android:textColor="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="규"
+            android:text="유"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gyoo" />
+            android:id="@+id/Button_yoo" />
     </LinearLayout>
 
     <LinearLayout
@@ -132,21 +131,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="그"
+            android:text="으"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_geu" />
+            android:id="@+id/Button_eu" />
 
         <Button
             android:textColor="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="기"
+            android:text="이"
             android:textStyle="bold"
             android:textSize="40dp"
-            android:id="@+id/Button_gee" />
+            android:id="@+id/Button_ee" />
     </LinearLayout>
-
 
 </LinearLayout>

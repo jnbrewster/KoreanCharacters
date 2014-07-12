@@ -31,7 +31,6 @@
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Whitetabs</item>
 
 
-
     </style>
 
     <style name="ActionBar.Solid.Whitetabs" parent="@android:style/Widget.Holo.ActionBar.Solid">
