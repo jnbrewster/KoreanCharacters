@@ -32,8 +32,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         super.onCreate(savedInstanceState);
 
 
-        //Show the actionmenu bar
-        //TODO: add options and help page icons
+        //Hide the actionmenu bar
         getActionBar().setDisplayShowHomeEnabled(false);
         getActionBar().setDisplayShowTitleEnabled(false);
 

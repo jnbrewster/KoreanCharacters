@@ -4,147 +4,252 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffecfdff">
+    android:background="#FF4444">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/LinearLayout1"
         android:layout_weight="1">
 
         <!-- Equal weights cause two columns of equal width. -->
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="아"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_a"
             android:paddingTop="10dp" />
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="앙"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_ang"
+            android:paddingTop="10dp" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="야"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_ya"
+            android:paddingTop="10dp" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="양"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_yang"
             android:paddingTop="10dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/LinearLayout2"
         android:layout_weight="1">
 
         <!-- Equal weights cause two columns of equal width. -->
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="어"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_eo" />
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="엉"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_eong" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="여"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_yeo" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="영"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_yeong" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/LinearLayout3"
         android:layout_weight="1">
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="오"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_oh" />
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="옹"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_ohng" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="요"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_yoh" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="용"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_yohng" />
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/LinearLayout4"
         android:layout_weight="1">
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="우"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_oo" />
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="웅"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_oong" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="유"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_yoo" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="융"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_yoong" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/LinearLayout5"
         android:layout_weight="1">
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="으"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_eu" />
 
         <Button
-            android:textColor="#FFFFFF"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="응"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_eung" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="이"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:id="@+id/Button_ee" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="잉"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/Button_eeng" />
+
     </LinearLayout>
 
 </LinearLayout>

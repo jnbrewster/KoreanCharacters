@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Whitetabs" >
+        android:theme="@style/Theme.Blacktab" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
