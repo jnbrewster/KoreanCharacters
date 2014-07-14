@@ -22,7 +22,7 @@
             android:text="라"
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_ga"
+            android:id="@+id/Button_la"
             android:paddingTop="10dp" />
 
         <Button
@@ -33,7 +33,7 @@
             android:text="랴"
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_gya"
+            android:id="@+id/Button_lya"
             android:paddingTop="10dp" />
     </LinearLayout>
 
@@ -53,7 +53,7 @@
             android:text="러"
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_geo" />
+            android:id="@+id/Button_leo" />
 
         <Button
 
@@ -63,7 +63,7 @@
             android:text="려"
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_gyeo" />
+            android:id="@+id/Button_lyeo" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +81,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_goh" />
+            android:id="@+id/Button_loh" />
 
         <Button
 
@@ -92,7 +92,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_gyoh" />
+            android:id="@+id/Button_lyoh" />
     </LinearLayout>
 
     <LinearLayout
@@ -110,7 +110,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_goo" />
+            android:id="@+id/Button_loo" />
 
         <Button
 
@@ -121,7 +121,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_gyoo" />
+            android:id="@+id/Button_lyoo" />
     </LinearLayout>
 
     <LinearLayout
@@ -139,7 +139,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_geu" />
+            android:id="@+id/Button_leu" />
 
         <Button
 
@@ -150,7 +150,7 @@
 
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_gee" />
+            android:id="@+id/Button_lee" />
     </LinearLayout>
 
 </LinearLayout>

@@ -141,14 +141,15 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     private void addTabs(ActionBar actionBar)
     {
         //Name the tabs
-        //TODO: condense the tabs
-
-
-        //TODO: Fix the blurry images
-
         ActionBar.Tab tab1=actionBar.newTab();
+        //TODO: Change the color of the highlighted tab
+        //tab1.setCustomView(R.id.custom_tab_view_blue);
+        //http://stackoverflow.com/questions/21335267/how-to-customize-individual-tabs-changing-background-color-indicator-color-an
+
+
         tab1.setIcon(R.drawable.tab1);
         tab1.setTabListener(this);
+
 
         ActionBar.Tab tab2=actionBar.newTab();
         tab2.setIcon(R.drawable.tab2);

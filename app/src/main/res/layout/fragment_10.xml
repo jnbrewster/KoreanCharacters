@@ -107,7 +107,7 @@
             android:text="쿠"
             android:textStyle="bold"
             android:textSize="40sp"
-            android:id="@+id/Button_joo" />
+            android:id="@+id/Button_koo" />
 
         <Button
 

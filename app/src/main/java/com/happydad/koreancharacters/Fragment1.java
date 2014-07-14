@@ -208,13 +208,13 @@ public class Fragment1 extends Fragment {
     }
 
     //Add options menu
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        MenuInflater mInflater = new MenuInflater(getActivity().getApplicationContext());
-        mInflater.inflate(R.menu.main, menu);
+    //@Override
+    //public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    //    MenuInflater mInflater = new MenuInflater(getActivity().getApplicationContext());
+    //    mInflater.inflate(R.menu.main, menu);
 
 
-    }
+    //}
 
 
 

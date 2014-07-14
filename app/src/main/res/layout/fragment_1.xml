@@ -22,9 +22,7 @@
             android:textSize="40sp"
             android:id="@+id/Button_ga"
             android:paddingTop="10dp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            android:textColorHighlight="#000000" />
+            android:textStyle="bold" />
 
         <Button
 
